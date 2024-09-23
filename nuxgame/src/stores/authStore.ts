@@ -2,14 +2,13 @@ import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import axios from 'axios';
 
-// Визначаємо інтерфейси для типів користувача та todos
 interface User {
   id: number;
   name: string;
   username: string;
   email: string;
   phone: string;
-  [key: string]: any; // Дозволяє будь-які інші властивості
+  [key: string]: any;
 }
 
 interface Todo {
